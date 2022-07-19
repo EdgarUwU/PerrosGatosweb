@@ -22,17 +22,24 @@
           border: 1px solid #ccc;
           
       }
+      .logo2{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        max-width: 100%;
+      }
     </style>
-    <main>
+    <main class="container">
         <div class="container mt-0"></div>
-            <center><img style="max-width: 100% ;" src="logo2.png"></imag></center>
+        <img class="logo2"src="./logo2.png" alt="logo">
           <div class="row">
               <div class="col-12 col-md-4 offset-md-4 text-center">  
-              <video id="video" playsinline autoplay style="width: 1px;"></video>
+              <video id="video" playsinline autoplay style="width: 1px; align-items: center;"></video>
               <canvas id="canvas" width="400" height="400" style="max-width: 100%;"></canvas>
               <canvas id="othercanvas" width="150" height="150" style="display: none"></canvas>
               <div id="resultado"></div>
-              <button class="btn btn-success mb-2" id="cambiar-camara" onclick="cambiarCamara();">Cambiar camara</button>          
+              <button class="btn btn-success mb-2" id="cambiar-camara" onclick="cambiarCamara();">Cambiar camara</button> 
+              </div>         
             </div>
           </div>
         </div>
